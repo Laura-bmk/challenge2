@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 59px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+    
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header{
+    background:linear-gradient(90deg, rgb(126, 14, 98),rgb(218,225,232),
+    rgb(30,196,209)); 
+    cursor:pointer;
+    z-index: 1000;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+header i {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    
+}
+i:hover{
+
+    color: rgb(48, 39, 175);
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+}
+
+header a:hover{
+    color: rgb(48, 39, 175);
+}
+
+#hero{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.8)
+    ),
+    url("./img/tecnologia\ abstracto.jpg");
+    background-repeat: no-repeat;
+    background-size:cover cover;
+    background-position: center center;
+        
+}
+
+.perfil-titulo h1{
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+    
+
+.perfil-titulo pre{
+    letter-spacing: 3px; 
+    line-height: 2em; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+
+#hero img{
+    border-radius: 120px;
+    box-shadow: 15px 10px 60px rgb(0, 127, 127, 0.7);
+      
+}
+#somos-proya .container{
+    margin:0;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    background-image: linear-gradient(
+        0deg,
+        rgba(74, 106, 143, 0.5),
+        rgba(136, 212, 241, 0.1)
+    ), url("./img/development-with-abstract-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+
+#somos-proya .texto{
+    padding: 30px;
+    font-family: Nunito;
+    color:white;
+    background: #3d3e5e;
+    opacity:0.8;
+    
+}
+
+#somos-proya h2{
+
+    text-align: center;
+    text-decoration:underline;
+    font-size: 30px;
+}
+
+#somos-proya p{
+    text-align:justify;
+    text-indent: 20px;
+
+}
+
+#somos-proya p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 2, 1;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+#nuestros-programas{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.8)
+    ),
+    url("./img/tecnologia\ abstracto.jpg");
+    background-repeat: no-repeat;
+    background-size:cover cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+    
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-shadow: 10px 0px 7px grey;
+}
+
+
+
+#nuestros-programas .programas{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    
+    background-color: grey;
+    cursor:pointer;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    width:33%;
+}
+
+.carta h3{
+    text-decoration: none;
+}
+
+
+
+#caracteristicas{
+    background-color:whitesmoke;
+    text-align: center;
+    
+      
+}
+
+#caracteristicas .container{
+   padding:150px 12px;
+   background-color:whitesmoke;
+   
+}
+
+#caracteristicas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-shadow: 20px 0px 7px grey;
+}
+
+#caracteristicas p{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+#caracteristicas .lenguajes{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+    
+}
+
+
+#caracteristicas .cartas{
+   background-position: center center;
+    background-size: cover;
+    cursor:pointer;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    width:18%
+}
+
+.cartas i{
+    font-size: 80px;
+}
+
+footer{
+    
+    background:linear-gradient(90deg, rgb(126, 14, 98),rgb(218,225,232),
+    rgb(30,196,209));
+    
+    
+}
+
+
+footer .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    padding: 5px 12px;
+    
+    
+}
+
+footer .container a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+
+}
+
+footer .container a:hover{
+    color:rgb(48, 39, 175);
+    
+}
+   
+/*---------------------------------MEDIA QUERIES------------------------*/
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+  
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+        background:linear-gradient(90deg, rgb(126, 14, 98),rgb(218,225,232),
+        rgb(30,196,209)); 
+        color:black;
+        padding: 15px;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 100px;
+        background-repeat: no-repeat;
+        
+        /*background-color: rgba(50, 50, 50, 1);*/
+        box-shadow: 2px 2px 10px rgba(105, 7, 66, 1);
+    }
+
+    
+    }
+
+
+    
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
